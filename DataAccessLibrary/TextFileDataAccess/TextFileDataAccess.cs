@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace DataAccessLibrary.TextFileDataAccess
 {
@@ -12,7 +10,7 @@ namespace DataAccessLibrary.TextFileDataAccess
 		{
 			List<string> output = new List<string>();
 
-			if (File.Exists(filePath))
+			if ( File.Exists(filePath) )
 			{
 				output = File.ReadAllLines(filePath).ToList();
 			}

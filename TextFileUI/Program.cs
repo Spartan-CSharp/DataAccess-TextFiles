@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 using DataAccessLibrary;
 using DataAccessLibrary.Models;
@@ -64,6 +63,7 @@ namespace TextFileUI
 						{
 							DisplayPerson(person);
 						}
+
 						break;
 					case 'u':
 						PersonModel personToUpdate = RetrievePerson();
